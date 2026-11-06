@@ -1,7 +1,7 @@
 # SERVPOS — Manual de programador
 
 Sistema de punto de venta para **San Juan Comidas Rápidas**. Este manual sigue la misma estructura que el manual de referencia entregado por el cliente (*Manual de programador - ReguiQuick Bike Store*), adaptado a los módulos reales de SERVPOS: **Usuarios y roles, Inventario y Pedidos** (MVP correspondiente a DRF1–DRF4 del documento de requerimientos).
-URL repositorio: 
+URL repositorio: https://github.com/M1GU3LP/SERVPOS.git
 
 ## 1. Introducción
 
