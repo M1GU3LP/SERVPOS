@@ -1,0 +1,220 @@
+/* RNF3.4: colores representativos de la empresa (rojo/amarillo tipo comida rápida) */
+:root {
+    --color-primario: #c62828;
+    --color-secundario: #ffb300;
+    --color-texto: #2b2b2b;
+    --color-fondo: #fdfaf5;
+    --color-borde: #e0d8c8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--color-texto);
+    background: var(--color-fondo);
+}
+
+.encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-primario);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.encabezado-izquierda {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logo {
+    height: 36px;
+}
+
+.nombre-empresa {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.menu-principal a {
+    color: #fff;
+    margin-right: 1rem;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu-principal a:hover {
+    color: var(--color-secundario);
+}
+
+.encabezado-derecha {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.contenido {
+    padding: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pie-pagina {
+    background: #2b2b2b;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.redes-sociales a {
+    color: var(--color-secundario);
+    margin: 0 0.5rem;
+    text-decoration: none;
+}
+
+.pagina-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.tarjeta-login {
+    background: #fff;
+    border: 1px solid var(--color-borde);
+    border-radius: 8px;
+    padding: 2rem;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-login h1 {
+    color: var(--color-primario);
+    margin-top: 0.5rem;
+}
+
+.bienvenida {
+    color: #555;
+    font-size: 0.95rem;
+}
+
+form label {
+    display: block;
+    margin-top: 0.75rem;
+    font-weight: 600;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+    border: 1px solid var(--color-borde);
+    border-radius: 4px;
+}
+
+button,
+.boton {
+    display: inline-block;
+    background: var(--color-primario);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 0.75rem;
+}
+
+button:hover,
+.boton:hover {
+    background: #a31f1f;
+}
+
+.boton-enlace {
+    background: none;
+    border: none;
+    color: var(--color-primario);
+    text-decoration: underline;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+
+form.inline {
+    display: inline;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fff;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid var(--color-borde);
+    padding: 0.5rem 0.75rem;
+    text-align: left;
+}
+
+.tabla th {
+    background: var(--color-secundario);
+}
+
+.fila-alerta {
+    background: #ffe5e5;
+}
+
+.mensaje-error {
+    color: #b00020;
+    font-weight: 600;
+}
+
+.mensaje-aviso {
+    color: #8a6d00;
+    font-weight: 600;
+}
+
+.mensaje-alerta {
+    background: #fff3cd;
+    border: 1px solid #ffe08a;
+    padding: 0.75rem 1rem;
+    border-radius: 4px;
+    margin-top: 1rem;
+}
+
+.cantidad-corta {
+    width: 60px !important;
+    display: inline-block !important;
+}
+
+.tarjeta-pedido-cocina {
+    background: #fff;
+    border: 1px solid var(--color-borde);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.fila-variante {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.fila-variante input {
+    flex: 1;
+}

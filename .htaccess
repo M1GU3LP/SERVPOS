@@ -1,0 +1,6 @@
+# Evita el listado de directorios y el acceso directo a config/models/controllers
+Options -Indexes
+
+<FilesMatch "\.(sql)$">
+    Require all denied
+</FilesMatch>
